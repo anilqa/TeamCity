@@ -7,6 +7,9 @@ import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
 
+import static java.lang.System.out;
+import static java.lang.System.setOut;
+
 /**
  * Created by E003690 on 6/28/2017.
  */
@@ -26,6 +29,7 @@ public class UnitTesting {
     @Test
     public void verifyLoginPage(){
        driver.get("https://accounts.google.com/");
+        System.out.println("HGello");
     }
 
     @AfterTest
